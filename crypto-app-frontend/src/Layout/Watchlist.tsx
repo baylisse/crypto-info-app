@@ -27,10 +27,9 @@ type GetWatchlistResponse = {
   entries: GetPriceResponse[];
 };
 
-const ProjectAPIURL = "http://localhost:3001";
 const currUserID = "user01";
-const apiEndpoint = "http://localhost:3001/Watchlist"
-const watchlistAPI = ProjectAPIURL + "/GetWatchlist/" + currUserID;
+const apiEndpoint = "/Watchlist"
+const watchlistAPI = "/GetWatchlist/" + currUserID;
 
 async function populateWatchlist() {
   const watchlist: GetWatchlistResponse = await (

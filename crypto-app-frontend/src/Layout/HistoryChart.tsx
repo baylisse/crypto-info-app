@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { createChart, CrosshairMode } from "lightweight-charts";
 import Button from "@mui/material/Button";
 
-const apiEndpoint = "http://localhost:3001/Watchlist";
+const apiEndpoint = "/Watchlist";
 
 export default function CandlestickChart() {
   let mutableReference: any = React.useRef(null);
@@ -84,7 +84,7 @@ export default function CandlestickChart() {
 
 let currencyCode = window.location.pathname.substring(1);
 
-const HistoryAPIURL = `http://localhost:3001/GetPriceHistory/${currencyCode}/1/1`;
+const HistoryAPIURL = `/GetPriceHistory/${currencyCode}/1/1`;
 
 async function getData() {
   const liveData: any = await (await fetch(HistoryAPIURL)).json();
