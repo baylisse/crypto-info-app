@@ -72,6 +72,7 @@ export default function CandlestickChart() {
 let currencyCode = window.location.pathname.substring(1);
 const HistoryAPIURL = `/GetPriceHistory/${currencyCode}/1/1`;
 async function getData() {
+    console.log(HistoryAPIURL)
     const liveData = await (await fetch(HistoryAPIURL)).json();
     return liveData;
 }
