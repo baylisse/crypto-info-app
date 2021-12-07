@@ -5,7 +5,7 @@
 
 ***NOTE*** The AlphaVantage API free level that this app uses can only make 5 requests per minute. If the Watchlist is more than 5 currencies long, it won't load properly. This could be addressed with an API key from the professional/paid AlphaVantage API.
 
-To run locally: npm install & npm start
+To run locally: after creating your own instance of a postgres database, use the URL in a .env file as the DATABASE_URL, then npm install & npm start
 
 The homepage of this app is a cryptocurrency watchlist, showing the currency name, symbol, ask price, and bid price for a given currency. Each row also has a button to take you to the currency's price chart. There is also a button to remove it from the watchlist.
 
