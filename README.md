@@ -3,7 +3,7 @@
 
 ### This was a short hackathon project and needs to be cleaned up
 
-####Deployed with Heroku: [Crypto Info App](https://bqb-crypto-app-2.herokuapp.com/)
+Deployed with Heroku: [Crypto Info App](https://bqb-crypto-app-2.herokuapp.com/)
 
 ***NOTE*** The AlphaVantage API free level that this app uses can only make 5 requests per minute. If the Watchlist is more than 5 currencies long, it won't load properly. This could be addressed with an API key from the professional/paid AlphaVantage API.
 
